@@ -1,8 +1,9 @@
 <template>
   <div id="app">
+    <navi></navi>
     <div>
-      <div class="test">Welcome to my web</div>
-      <i class="fa fa-code"></i>
+      <span class="test">Welcome to my web</span>
+      <span class="fa fa-code"></span>
 
       <h2>Ecosystem</h2>
     </div>
@@ -10,26 +11,32 @@
 </template>
 
 <script>
-
+  import navi from './components/common/navi.vue'
   export default {
     name: 'app',
     data () {
       return {
         msg: 'Welcome to Your Vue.js App'
       }
+    },
+    components:{
+        "navi":navi
     }
   }
 </script>
 
 <style lang="scss">
-  @import './assets/fontawesome-free-5.0.13/web-fonts-with-css/scss/fontawesome.scss';
+  @import "assets/font-awesome-4.7.0/css/font-awesome.css";
+  body{
+    padding: 0;
+    margin: 0;
+  }
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
   }
 
   h1, h2 {
