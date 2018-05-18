@@ -20,5 +20,5 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 ## threejs
 ``` bash
 # documnet
-https://threejs.org/docs/#manual/introduction/Creating-a-scene
+[https://threejs.org/docs/#manual/introduction/Creating-a-scene](https://threejs.org/docs/#manual/introduction/Creating-a-scene)
 ```

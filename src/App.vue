@@ -5,13 +5,15 @@
       <span class="test">Welcome to my web</span>
       <span class="fa fa-code"></span>
 
-      <h2>Ecosystem</h2>
+      <birds style="position: absolute; top: 100px;left: 0px"></birds>
     </div>
   </div>
 </template>
 
 <script>
-  import navi from './components/common/navi.vue'
+  import navi from './components/common/navi.vue';
+  import birds from './components/birds.vue';
+
   export default {
     name: 'app',
     data () {
@@ -20,7 +22,8 @@
       }
     },
     components:{
-        "navi":navi
+        "navi":navi,
+        "birds":birds
     }
   }
 </script>
@@ -36,7 +39,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
+    /*color: #2c3e50;*/
   }
 
   h1, h2 {
